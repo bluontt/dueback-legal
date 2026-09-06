@@ -29,7 +29,7 @@
   <h3>1.1 Information you provide</h3>
   <ul>
     <li><strong>Account email.</strong> If you create an account (optional — see below), we collect the email address you sign up with, via our backend provider Supabase Auth.</li>
-    <li><strong>Receipt data.</strong> When you scan or add a receipt, DueBack captures a photo of the receipt and extracts text from it (merchant name, price, purchase date, and any return/warranty/trial deadlines) using on-device text recognition (Google ML Kit). This processing happens locally on your device — the receipt image is not sent anywhere for text extraction.</li>
+    <li><strong>Receipt data.</strong> When you scan or add a receipt, DueBack captures a photo of the receipt and extracts text from it (merchant name, price, purchase date, and any return/warranty/trial deadlines) using on-device text recognition. This processing happens locally on your device — the receipt image is not sent anywhere for text extraction.</li>
     <li><strong>Store requests.</strong> If you ask us to add a retailer to DueBack's built-in return-policy list ("Don't see your store? Request it" in Settings), we collect the store name and any note you type. This doesn't require an account — if you're signed in, the request is linked to your account so we can follow up; if not, it's submitted without any identifying account information.</li>
   </ul>
 
@@ -59,7 +59,7 @@
   <ul>
     <li><strong>Supabase</strong> — hosts our database and file storage for account data, synced receipts, purchase records, and store requests you submit.</li>
     <li><strong>Google Play Billing / Apple In-App Purchase</strong> — processes the Lifetime Pro purchase.</li>
-    <li><strong>Google ML Kit (on-device)</strong> — performs text recognition locally on your device; images are not uploaded to Google for this purpose.</li>
+    <li><strong>On-device text recognition</strong> — Android uses Google's ML Kit; iOS uses Apple's Vision framework. Both run entirely on your device; your receipt image is not uploaded to Google or Apple for this purpose.</li>
   </ul>
 
   <h2>4. Data security</h2>
